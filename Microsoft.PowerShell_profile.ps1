@@ -1,3 +1,8 @@
+# To create a profile if it doesn't exist:
+# if (!(Test-Path -Path $PROFILE ))
+#{ New-Item -Type File -Path $PROFILE -Force }
+
+
 $title = Read-Host -Prompt "Window Title?"
 $host.ui.RawUI.WindowTitle = $title
 
